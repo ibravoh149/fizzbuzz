@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sample website</title>
+	<style type="text/css">
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+html{
+    height: 100%;
+}
+    body{
+    background-color:;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+
+.img{
+    padding-left: 0px;
+    margin-left: 0px;
+    auto:0;
+}
+
+#ss{
+    color: #B1521A;
+    text-shadow:none;
+}
+#btn{
+font: normal 110% Arial, Helvetica, sans-serif;
+  float: left;
+  height: 35px;
+  padding: 5px 10px 7px 8px;
+  background: #0043A8;
+  background: -moz-linear-gradient(#43A9FF, #0043A8);
+  background: -o-linear-gradient(#43A9FF, #0043A8);
+  background: -webkit-linear-gradient(#43A9FF, #0043A8);
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border: 15px 15px 15px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  color: white;
+}
+
+#btn{
+color: #FFF;
+  padding-left: 5px;
+  text-shadow: 1px 1px #000;
+}
+nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 30px;
+    list-style: none;
+}
+nav ul {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+nav
+{ height: 60px;} 
+
+#menu
+{ width: 940px;
+  height: 55px;
+  padding-top: 10px;
+  text-align:; 
+  margin: 0 auto;
+}
+
+  a, a:hover
+{ color: #000;
+  background: transparent;
+  font-weight: bold;
+  outline: none;
+  text-decoration: underline;
+}
+
+a:hover
+{ text-decoration: none;}
+
+#header
+{ height: 150px;
+  background: #1D1D1D;
+  color:white;
+  background: -moz-linear-gradient(#535353, #000);
+  background: -o-linear-gradient(#535353, #000);
+  background: -webkit-linear-gradient(#535353, #000);}
+ 
+
+ul
+{ margin: 2px 0 22px 30px;
+  line-height: 1.7em;
+  font-style: normal;
+  font-size: 100%;
+}
+.slider-holder{
+    height: 200px;
+    background: #0043A8;
+  padding-top: 20px;
+}
+#mainContent{
+    margin:0 50px 0, 50px;
+}
+.footer ul li{
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+}
+.footer ul{
+    margin-left: 50px;
+    text-align: center;
+}
+.footer{
+    width: 940px;
+  height: 100px;
+  padding-top: 25px;
+  padding-bottom: 20px;  
+  padding-left: 50px;
+  font-weight: bold;
+  text-align: center; 
+  text-shadow: 1px 1px #000;
+  color: #FFF;
+  background: #0043A8;
+  background: -moz-linear-gradient(#43A9FF, #0043A8);
+  background: -o-linear-gradient(#43A9FF, #0043A8);
+  background: -webkit-linear-gradient(#43A9FF, #0043A8);
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border: 15px 15px 15px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+}
+
+.footer a, .footer a:hover
+{ text-shadow: 1px 1px #FFF;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 20px;}
+
+.footer a:hover
+{ text-decoration: underline;}
+
+footer a, .footer a:hover
+{ text-shadow: 1px 1px #000;
+  color: #FFF;
+  text-decoration: none;}
+
+.footer a:hover
+{ text-decoration: underline;}
+  
+ .readmore a
+{ color: #FFF;
+  text-shadow: 1px 1px #004C8C;}
+	</style>
+</head>
+<body>
+	<div id = "main-content">
+		<div id = "header">
+			<div id= "slogan">
+				<h1 style = "text-align:center;">Welcome To FreeHTML5<span id ="ss">Streets</span></h1>
+			</div>
+			<nav>
+				<div id = "menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+			            <li><a href="#">Our Work</a></li>
+			            <li><a href="#">Testimonials</a></li>
+			            <li><a href="#">Projects</a></li>
+			            <li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+				
+			</nav>
+		</div>
+		<div class = "row">
+			<div class = "col-m-12">
+					<div class="slider-holder" style ="max-width:100%;">
+				        <div class ="row">
+				        	<div class ="col-m-3">
+				        		<img src="images/images (1).jpg" alt ="image"/>
+				        	</div>
+				        	<div class ="col-m-3">
+				        		<img src="images/images (1).jpg" alt ="image"/>
+				        	</div>
+				        	<div class ="col-m-3">
+				        		<img src="images/images (1).jpg" alt ="image"/>
+				        	</div>
+				        	<div class ="col-m-3">
+				        		<img src="images/images (1).jpg" alt ="image"/>
+				        	</div>
+				        </div>
+			        
+			        
+   					 </div>
+			</div>
+
+		</div>
+		<div id = "mainContent">
+			<div class = "row">
+			<div class= "col-m-8">
+				<div id = "s">
+					<h3 style ="text-align:left;">Welcome To Your Website</h3>
+					<p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under the Creative Commons Attribution 3.0 Licence), which means that you are free to download and use it for anything you want (including modifying and amending it). If you wish to remove the “website template by Free HTML5 Templates”, all I ask is for a donation of £20.00 GBP. Please feel free to contact me with any questions you may have about my free HTML5 website templates or bespoke work.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elit sapien, tempus sit amet hendrerit volutpat, euismod vitae risus. Etiam consequat, sem et vulputate dapibus, diam enim tristique est, vitae porta eros mauris ut orci. Praesent sed velit odio. Ut massa arcu, suscipit viverra molestie at, aliquet a metus. Nullam sit amet tellus dui, ut tincidunt justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis egestas laoreet. Nunc non ipsum metus, non laoreet urna. Vestibulum quis risus quis diam mattis tempus. Vestibulum suscipit pretium tempor. </p>
+			</div>
+				<div class ="row">
+					<div class = "col-m-6">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elit sapien, tempus sit amet hendrerit volutpat, euismod vitae risus. Etiam consequat, sem et vulputate dapibus, diam enim tristique </p><br><br>
+						<div class = "readmore">
+							<button id ="btn"><a href="#">Read more</a></button>
+						</div>
+
+					</div>
+					<div class = "col-m-6">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elit sapien, tempus sit amet hendrerit volutpat, euismod vitae risus. Etiam consequat, sem et vulputate dapibus, diam enim tristique </p><br><br>
+						<div class = "readmore">
+							<button id ="btn"><a href="#">Read more</a></button>
+						</div>
+						
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class = "col-m-4">
+				<div>
+					<h4>New Website</h4>
+					<p>Welcome to our new website. Please have a look around, any feedback is much appreciated.</p>
+				</div><br><br>
+				<div>
+					<h4>Latest Update</h4>
+				</div><br><br>
+				<div>
+					<h4>March 2016</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
+				</div><br><br>
+				<div>
+					<h4>February 2016</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
+				</div><br>
+				<br>
+				<div>
+					<h4>Contact</h4>
+					<p> Phone : 08067387215</p>
+					<p> Email : ibravoh149@gmail.com</p>
+				</div>
+			</div>
+		<div class="col-m-12">
+				<div class = "footer">
+			<a href="index.html">Home</a> | <a href="#">Our Work</a> | <a href="#">Testimonials</a> | <a href="#">Projects</a> | <a href="#">Contact</a><br/><br/>
+	  <a href="#">Images</a> |  <a href="#">Virtual Server</a>  | website template by <a href="#">Free HTML5 Templates</a>
+
+		</div>
+
+			</div>
+		</div><!--maincontent-->
+
+		<div class = "row">
+
+		</div>
+		
+		
+
+	</div><!main content-->
+</body>
+</html>

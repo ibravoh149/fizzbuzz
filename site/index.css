@@ -1,0 +1,206 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+html{
+    height: 100%;
+}
+    body{
+    background-color:;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+
+.img{
+    padding-left: 0px;
+    margin-left: 0px;
+    auto:0;
+}
+
+#ss{
+    color: #B1521A;
+    text-shadow:none;
+}
+#btn{
+font: normal 110% Arial, Helvetica, sans-serif;
+  float: left;
+  height: 35px;
+  padding: 5px 10px 7px 8px;
+  background: #0043A8;
+  background: -moz-linear-gradient(#43A9FF, #0043A8);
+  background: -o-linear-gradient(#43A9FF, #0043A8);
+  background: -webkit-linear-gradient(#43A9FF, #0043A8);
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border: 15px 15px 15px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  color: white;
+}
+
+#btn{
+color: #FFF;
+  padding-left: 5px;
+  text-shadow: 1px 1px #000;
+}
+nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 30px;
+    list-style: none;
+}
+nav ul {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+nav
+{ height: 60px;} 
+
+#menu
+{ width: 940px;
+  height: 55px;
+  padding-top: 10px;
+  text-align:; 
+  margin: 0 auto;
+}
+
+  a, a:hover
+{ color: #000;
+  background: transparent;
+  font-weight: bold;
+  outline: none;
+  text-decoration: underline;
+}
+
+a:hover
+{ text-decoration: none;}
+
+#header
+{ height: 150px;
+  background: #1D1D1D;
+  color:white;
+  background: -moz-linear-gradient(#535353, #000);
+  background: -o-linear-gradient(#535353, #000);
+  background: -webkit-linear-gradient(#535353, #000);}
+ 
+
+ul
+{ margin: 2px 0 22px 30px;
+  line-height: 1.7em;
+  font-style: normal;
+  font-size: 100%;
+}
+#sliderShow{
+    height: 200px;
+    background: #0043A8;
+  padding-top: 20px;
+}
+#mainContent{
+    margin:0 50px 0, 50px;
+}
+.footer ul li{
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+}
+.footer ul{
+    margin-left: 50px;
+    text-align: center;
+}
+.footer{
+    width: 940px;
+  height: 100px;
+  padding-top: 25px;
+  padding-bottom: 20px;  
+  padding-left: 50px
+  font-weight: bold;
+  text-align: center; 
+  text-shadow: 1px 1px #000;
+  color: #FFF;
+  background: #0043A8;
+  background: -moz-linear-gradient(#43A9FF, #0043A8);
+  background: -o-linear-gradient(#43A9FF, #0043A8);
+  background: -webkit-linear-gradient(#43A9FF, #0043A8);
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border: 15px 15px 15px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+}
+
+.footer a, .footer a:hover
+{ text-shadow: 1px 1px #FFF;
+  color: #1D1D1D;
+  text-decoration: none;
+  padding-bottom: 20px;}
+
+.footer a:hover
+{ text-decoration: underline;}
+
+footer a, .footer a:hover
+{ text-shadow: 1px 1px #000;
+  color: #FFF;
+  text-decoration: none;}
+
+.footer a:hover
+{ text-decoration: underline;}
+  
+ .readmore a
+{ color: #FFF;
+  text-shadow: 1px 1px #004C8C;}
